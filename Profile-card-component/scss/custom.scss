@@ -1,0 +1,139 @@
+//ESTILOS NECESARIOS
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+//IMPORTO FUENTES NECESARIAS
+@font-face {
+    font-family: Kumbh Sans;
+    src: url(https://fonts.google.com/specimen/Kumbh+Sans);
+}
+
+.bgbody{
+    overflow: hidden;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    /*PRUEBA DE POSICIONAR CIRCULOS DE FONDOS SEGUN
+    PROPIEDAD DE background-position:, LA CUAL SALIO
+    MAL*/
+    /*background-image: url("../images/bg-pattern-top.svg"),url("../images/bg-pattern-bottom.svg");
+    background-position: -400px -600px, 500px 400px;
+    background-repeat: no-repeat;*/
+
+   
+}
+
+.card-main{
+   width: 360px;
+    height: 380px;
+    background: none;
+   
+    /*==========posiciono circulos de fondo========*/
+    @mixin features-circles-bg($cordx,$cordy) {
+        transform: translate($cordx, $cordy);
+        z-index: 0;
+    }
+
+    .circle-1{
+        @include features-circles-bg(-800px,-700px);
+    }
+
+    .circle-2{
+        @include features-circles-bg(-200px,-180px);
+    }
+
+    /*=====================================*/
+
+    .content-card{
+        z-index: 10;
+        position: relative;
+
+        .top-card{
+            background-image: url(../images/bg-pattern-card.svg);
+            height: 150px;
+            border-radius: 20px 20px 0 0;
+
+            .image-perfil{
+                margin-bottom: -280px;    
+            }
+        }
+    
+        .description-card{
+            height: 230px;
+            background-color: #fff;
+            border-radius: 0 0 20px 20px;
+
+            .middle{
+                padding: 70px 0 20px 0;
+                border-bottom: 1px  hsl(220, 3%, 81%) solid;
+
+                .name{
+
+
+                    font-family: Kumbh Sans, sans-serif;
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 18px;
+
+                    .age{
+                        font-family: Kumbh Sans, sans-serif;
+                        font-weight: 100;
+                        color: hsl(227, 10%, 46%);
+                        font-size: 18px;
+                        padding-left: 20px;
+                    }
+                }
+
+                .city{
+                    font-family: Kumbh Sans, sans-serif;
+                    padding-top: 8px;
+                    color: hsl(227, 10%, 46%);
+                    font-weight: 400;
+                }
+            }
+
+            .bottom-card{
+                text-align: center;
+            }
+
+            .bottom-card > *{
+                font-family: Kumbh Sans, sans-serif;
+                text-align: center;
+                display: inline-block;
+                margin: 0 8px;
+               padding: 16px 15px;
+               font-size: 20px;
+               font-weight: 800;
+            }
+
+            @mixin style-tag{
+                font-family: Kumbh Sans, sans-serif;
+                font-size: 11px;
+                color: hsl(227, 10%, 46%);
+               font-weight: 200;
+               letter-spacing: 2px;
+            }
+
+            .followers p{
+                @include style-tag;
+            }
+
+            .likes p{
+                @include style-tag;
+            }
+
+            .photos p{
+                @include style-tag;
+            }
+        }
+    }
+}
+
+
+
+@media(max-width:500px){
+    .card-main{
+        width: 70%;
+    }
+}
