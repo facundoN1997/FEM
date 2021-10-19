@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bg {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #af67e9), color-stop(80%, #6565e7));
+  background: linear-gradient(180deg, #af67e9 30%, #6565e7 80%);
+  min-height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bg .card {
+  background-color: #fff;
+  width: 64%;
+  height: 66.4%;
+  padding: 50px 30px;
+  margin: 20px 0;
+  border-radius: 20px;
+  background-image: url("../images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 400% 68%;
+}
+
+.bg .card .row-faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+
+.bg .card .row-faq .img {
+  height: 300px;
+  width: 100%;
+}
+
+.bg .card .row-faq .faq {
+  width: 50%;
+}
+/*# sourceMappingURL=style.css.map */

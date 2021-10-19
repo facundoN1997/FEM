@@ -23,14 +23,16 @@
 
 .bg .card {
   background-color: #fff;
-  width: 64%;
-  height: 66.4%;
-  padding: 50px 30px;
-  margin: 20px 0;
+  width: 90%;
+  max-width: 760px;
+  height: 420px;
+  padding: 30px 30px;
   border-radius: 20px;
-  background-image: url("../images/bg-pattern-desktop.svg");
-  background-repeat: no-repeat;
-  background-position: 400% 68%;
+  position: relative;
+  background-image: url("../images/illustration-woman-online-desktop.svg"), url("../images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat, no-repeat,no-repeat;
+  background-size: 400px 300px,97%;
+  background-position: left -20% top 70px,left -1700% top 70%,left top;
 }
 
 .bg .card .row-faq {
@@ -40,15 +42,97 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
 .bg .card .row-faq .img {
-  height: 300px;
-  width: 100%;
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.bg .card .row-faq .img #img-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(-60%, 77%);
+          transform: translate(-60%, 77%);
 }
 
 .bg .card .row-faq .faq {
-  width: 50%;
+  width: 40%;
+  margin-right: 8%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding-top: 30px;
+}
+
+.bg .card .row-faq .faq h1 {
+  font-family: sans-serif;
+  padding-bottom: 20px;
+}
+
+.bg .card .row-faq .faq .item-question {
+  list-style-type: none;
+  border-bottom: 1px solid #e7e7e9;
+  position: relative;
+  padding-right: 23px;
+  cursor: pointer;
+}
+
+.bg .card .row-faq .faq .item-question .arrow {
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 8px;
+}
+
+.bg .card .row-faq .faq .item-question .title-question {
+  font-family: sans-serif;
+  letter-spacing: .8px;
+  font-size: .64rem;
+  font-weight: 300;
+  padding: 15px 0px;
+}
+
+.bg .card .row-faq .faq .item-question .parraph-question {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .card {
+    background-size: 300px 250px, 97% !important;
+  }
+  #img-box {
+    -webkit-transform: scale(0.7) translate(-88%, 77%) !important;
+            transform: scale(0.7) translate(-88%, 77%) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    background-image: none,none !important;
+  }
+  .card #img-box {
+    display: none;
+  }
+  .card .img {
+    width: 0% !important;
+  }
+  .card .faq {
+    width: 100% !important;
+    padding: 0 25px;
+  }
+  .card .faq .row-faq {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */
