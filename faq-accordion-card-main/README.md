@@ -10,4 +10,4 @@ Se realizo un diseño siguiendo el modelo presentado usando las siguientes tecno
 -JAVASCRIPT
 -BOOTSTRAP
 -JQUERY
--NODE JS
+
