@@ -34,9 +34,10 @@
 
 .bg .card {
   background-color: #fff;
+  position: relative;
   width: 90%;
   max-width: 760px;
-  height: 420px;
+  min-height: 420px;
   padding: 30px 30px;
   border-radius: 20px;
   position: relative;
@@ -69,8 +70,8 @@
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-transform: translate(-60%, 77%);
-          transform: translate(-60%, 77%);
+  -webkit-transform: translate(-60%, 0);
+          transform: translate(-60%, 0);
 }
 
 .bg .card .row-faq .faq {
@@ -96,8 +97,8 @@
 
 .bg .card .row-faq .faq .item-question .arrow {
   position: absolute;
-  right: 7px;
-  top: 50%;
+  right: 0px;
+  top: 20px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 8px;
@@ -121,19 +122,26 @@
   
 }
 
+#bg-mobile{
+  display: none;
+  position: absolute;
+}
+
 @media (max-width: 800px) {
   .card {
     background-size: 300px 250px, 97% !important;
   }
   #img-box {
-    -webkit-transform: scale(0.7) translate(-88%, 77%) !important;
-            transform: scale(0.7) translate(-88%, 77%) !important;
+    -webkit-transform: scale(0.7) translate(-97%, -40%) !important;
+            transform: scale(0.7) translate(-97%, -40%) !important;
   }
 }
 
 @media (max-width: 600px) {
   .card {
-    background-image: none,none !important;
+    background-image: url("../images/bg-pattern-mobile.svg") !important;
+    background-size: 260px 100px !important;
+    background-position: 52% -4% !important;
   }
   .card #img-box {
     display: none;
@@ -151,6 +159,23 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .faq h1{
+    text-align: center;
+    font-size: 37px;
+  }
+
+  .card{
+    padding: 80px 0 50px 0 !important;
+    margin-top: 50px;
+  }
+
+  #bg-mobile{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(45%,-60%);
+  }
 }
 
 .hidden {
@@ -160,5 +185,12 @@
 .tittle-active {
   font-family: "Kumbh Sans bold", sans-serif !important;
 }
+
+.rotate{
+  transform:  translateY(-50%) rotate(180deg) !important;
+}
+
+
+
 
 /*# sourceMappingURL=style.css.map */

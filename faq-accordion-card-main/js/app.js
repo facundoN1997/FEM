@@ -18,11 +18,14 @@ $(".item-question").click((e)=>{
 
     const parrafo = item.children[2];
     const titulo = item.children[0];
+    const flecha = item.children[1]
 
     $(".parraph-question").addClass("hidden");
+    $(".arrow").removeClass("rotate");
     $(".title-question").removeClass("tittle-active");
-    parrafo.classList.remove("hidden")
-    titulo.classList.add("tittle-active")
+    parrafo.classList.remove("hidden");
+    titulo.classList.add("tittle-active");
+    flecha.classList.add("rotate")
 
 
 
