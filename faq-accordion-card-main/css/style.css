@@ -1,3 +1,14 @@
+
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("../fonts/KumbhSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Kumbh Sans bold";
+  src: url("../fonts/KumbhSans-Bold.ttf");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -93,7 +104,8 @@
 }
 
 .bg .card .row-faq .faq .item-question .title-question {
-  font-family: sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
   letter-spacing: .8px;
   font-size: .64rem;
   font-weight: 300;
@@ -101,7 +113,12 @@
 }
 
 .bg .card .row-faq .faq .item-question .parraph-question {
-  display: none;
+
+  font-size: 10px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  padding: 4px 0;
+  
 }
 
 @media (max-width: 800px) {
@@ -135,4 +152,13 @@
             flex-direction: column;
   }
 }
+
+.hidden {
+  display:none
+}
+
+.tittle-active {
+  font-family: "Kumbh Sans bold", sans-serif !important;
+}
+
 /*# sourceMappingURL=style.css.map */
