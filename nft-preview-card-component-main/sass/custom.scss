@@ -1,0 +1,125 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("../fonts/Outfit-ExtraLight.ttf"), url("../fonts/Outfit-SemiBold.ttf"),url("../fonts/Outfit-Bold.ttf");
+    font-weight: 300, 400, 600;
+}
+
+.background{
+    background-color: hsl(217, 54%, 11%);
+    width: 100vw;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.card{
+    min-width: 270px;
+    width: 18%;
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 13px;
+    padding: 18px;
+
+    .img-main{
+        width: 100%;
+        border-radius: 13px;
+        padding-bottom: 11px;
+    }
+
+    .title{
+        font-family: "Outfit", sans-serif;
+        color: white;
+        font-size: .96rem;
+        letter-spacing: 1px;
+        padding: 10px 0;
+    }
+
+    .parraph{
+        color: hsl(215, 51%, 70%);
+        font-family: "Outfit", sans-serif;
+        font-size: .85rem;
+        font-weight: 300;
+        padding: 4px 0;
+    }
+
+    .info{
+        display: flex;
+        justify-content: space-between;
+        padding: 17px 0 17px 0;
+
+        .item{
+            position: relative;
+            padding: 2px;
+            display: flex;
+            align-items: flex-start;
+
+            @mixin icono-item($width: 8px,$height: 14px) {
+                width: $width;
+                height: $height;
+                margin-right: 5px;
+            }
+
+            .ether{
+                @include icono-item()
+            }
+
+            .clock{
+                @include icono-item(14px,14px)
+            }
+            
+
+             .ether-parraph{
+                font-family: "Outfit", sans-serif;
+                font-weight: 600;
+                font-size: .7rem;
+                line-height: 14px;
+                color: hsl(178, 100%, 50%);
+                
+             }
+
+             .clock-parraph{
+                font-family: "Outfit", sans-serif;
+                font-weight: 600;
+                font-size: .7rem;
+                letter-spacing: 1px;
+                line-height: 14px;
+                color:hsl(215, 51%, 70%);
+             }
+        }
+        
+    }
+
+    .author{
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid hsl(215, 32%, 27%);
+        padding: 9px 0;
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 26px;
+            height: 26px;
+            outline: 1px solid white;
+            object-position: center;
+            border-radius: 50%;
+            
+        }
+
+        .text{
+            flex-grow: 120;
+        }
+    }
+}

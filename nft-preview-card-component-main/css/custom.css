@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit-ExtraLight.ttf"), url("../fonts/Outfit-SemiBold.ttf"), url("../fonts/Outfit-Bold.ttf");
+  font-weight: 300, 400, 600;
+}
+
+.background {
+  background-color: #0d192b;
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card {
+  min-width: 270px;
+  width: 18%;
+  background-color: #14253d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 13px;
+  padding: 18px;
+}
+
+.card .img-main {
+  width: 100%;
+  border-radius: 13px;
+  padding-bottom: 11px;
+}
+
+.card .title {
+  font-family: "Outfit", sans-serif;
+  color: white;
+  font-size: .96rem;
+  letter-spacing: 1px;
+  padding: 10px 0;
+}
+
+.card .parraph {
+  color: #8bacda;
+  font-family: "Outfit", sans-serif;
+  font-size: .85rem;
+  font-weight: 300;
+  padding: 4px 0;
+}
+
+.card .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 17px 0 17px 0;
+}
+
+.card .info .item {
+  position: relative;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.card .info .item .ether {
+  width: 8px;
+  height: 14px;
+  margin-right: 5px;
+}
+
+.card .info .item .clock {
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}
+
+.card .info .item .ether-parraph {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: .7rem;
+  line-height: 14px;
+  color: #00fff7;
+}
+
+.card .info .item .clock-parraph {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: .7rem;
+  letter-spacing: 1px;
+  line-height: 14px;
+  color: #8bacda;
+}
+
+.card .author {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #2f415b;
+  padding: 9px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .author img {
+  width: 26px;
+  height: 26px;
+  outline: 1px solid white;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+}
+
+.card .author .text {
+  -webkit-box-flex: 120;
+      -ms-flex-positive: 120;
+          flex-grow: 120;
+}
+/*# sourceMappingURL=custom.css.map */
