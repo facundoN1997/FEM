@@ -139,7 +139,7 @@
   outline: 1px solid white;
   -o-object-position: center;
      object-position: center;
-  border-radius: 50%;
+  border-radius: 20px;
 }
 
 .card .author .text {
