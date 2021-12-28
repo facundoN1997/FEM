@@ -108,15 +108,16 @@
   font-weight: 600;
   font-size: .7rem;
   line-height: 14px;
+  letter-spacing: 1px;
   color: #00fff7;
 }
 
 .card .info .item .clock-parraph {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: .7rem;
-  letter-spacing: 1px;
+  font-size: .67rem;
   line-height: 14px;
+  letter-spacing: 1px;
   color: #8bacda;
 }
 
@@ -133,18 +134,35 @@
           align-items: center;
 }
 
-.card .author img {
-  width: 26px;
-  height: 26px;
+.card .author picture {
+  width: 24px;
+  height: 24px;
   outline: 1px solid white;
+  border-radius: 50%;
+}
+
+.card .author img {
+  width: 100%;
   -o-object-position: center;
      object-position: center;
   border-radius: 20px;
 }
 
 .card .author .text {
-  -webkit-box-flex: 120;
-      -ms-flex-positive: 120;
-          flex-grow: 120;
+  padding-left: 12px;
+}
+
+.card .author .text *:first-child {
+  font-family: "Outfit";
+  font-weight: 400;
+  font-size: .8rem;
+  color: #8bacda;
+}
+
+.card .author .text *:last-child {
+  font-family: "Outfit";
+  font-weight: 400;
+  font-size: .8rem;
+  color: white;
 }
 /*# sourceMappingURL=custom.css.map */

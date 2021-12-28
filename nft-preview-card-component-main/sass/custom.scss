@@ -85,6 +85,7 @@
                 font-weight: 600;
                 font-size: .7rem;
                 line-height: 14px;
+                letter-spacing: 1px;
                 color: hsl(178, 100%, 50%);
                 
              }
@@ -92,9 +93,9 @@
              .clock-parraph{
                 font-family: "Outfit", sans-serif;
                 font-weight: 600;
-                font-size: .7rem;
-                letter-spacing: 1px;
+                font-size: .67rem;
                 line-height: 14px;
+                letter-spacing: 1px;
                 color:hsl(215, 51%, 70%);
              }
         }
@@ -108,18 +109,38 @@
         padding: 9px 0;
         display: flex;
         align-items: center;
+        
 
-        img{
-            width: 26px;
-            height: 26px;
+        picture{
+            width: 24px;
+            height: 24px;
             outline: 1px solid white;
-            object-position: center;
-            border-radius: 20px;
+            border-radius: 50%;
             
         }
 
+        img{
+            width: 100%;
+            object-position: center;
+            border-radius: 20px;
+        }
+
         .text{
-            flex-grow: 120;
+            padding-left: 12px;
+        }
+
+        .text *:first-child{
+            font-family: "Outfit";
+            font-weight: 400;
+            font-size: .8rem;
+            color: hsl(215, 51%, 70%);
+        }
+        
+        .text *:last-child{
+            font-family: "Outfit";
+            font-weight: 400;
+            font-size: .8rem;
+            color: hsl(0, 0%, 100%);
         }
     }
 }
