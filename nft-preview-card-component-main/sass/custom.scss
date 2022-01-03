@@ -31,11 +31,52 @@
     align-items: center;
     border-radius: 13px;
     padding: 18px;
+    box-shadow: 2px 1px 16px #141414;
 
-    .img-main{
-        width: 100%;
+    .header-card{
         border-radius: 13px;
-        padding-bottom: 11px;
+        margin-bottom: 11px;
+        position: relative;
+        cursor: pointer;
+
+        .img-main{
+            width: 100%;
+        }
+
+        .bg{
+            background-color: hsl(178, 100%, 50%);
+            width: 100%;
+            height: 234px;
+            position: absolute;
+            top:0px;
+            left: 0px;
+            opacity: 0;
+            transition: opacity .5s;
+        }
+        
+        .half-visible{
+            opacity: .5;
+        }
+
+        
+
+        .img-eye{
+            position: absolute;
+            top:0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 30px;
+            margin: auto;
+            opacity: 0;
+            transition: opacity .5s;
+        }
+
+        .visible{
+            opacity: 1;
+        }
+
+        
     }
 
     .title{
@@ -44,6 +85,11 @@
         font-size: .96rem;
         letter-spacing: 1px;
         padding: 10px 0;
+        cursor: pointer;
+    }
+
+    .title:hover{
+        color: hsl(178, 100%, 50%)
     }
 
     .parraph{
@@ -141,6 +187,11 @@
             font-weight: 400;
             font-size: .8rem;
             color: hsl(0, 0%, 100%);
+            cursor: pointer;
+        }
+
+        .text *:last-child:hover{
+            color: hsl(178, 100%, 50%)
         }
     }
 }

@@ -1,0 +1,42 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    height: 100vh;
+    min-height: 500px;
+    
+
+
+
+    .header-sup{
+        
+        height: 70%;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        .panel-left{
+            background-image: url("../images/desktop-image-hero-1.jpg");
+            background-size: cover;
+            flex: 1.5 2 300px;
+            min-height: 400px;
+
+            .item-of-navbar{
+                font-size: .85rem;
+            }
+        }
+
+        .panel-right{
+            background-color: violet;
+            flex: 1 1 200px;
+        }
+    }
+
+    .header-inf{
+        background-color: mediumaquamarine;
+        height: 30%;
+    }
+}
