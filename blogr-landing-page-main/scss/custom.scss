@@ -1,0 +1,92 @@
+//ESTILOS GENERALES======================================================================
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    border:0;
+    background: none;
+}
+
+@font-face {
+    font-family: "ubuntu";
+    font-weight: 400,500,700;
+    src: url("../fonts/ubuntu/Ubuntu-Regular.ttf"),url("../fonts/ubuntu/Ubuntu-Medium.ttf"),url("../fonts/ubuntu/Ubuntu-Bold.ttf");
+}
+
+@font-face {
+    font-family: "overpass";
+    font-weight: 300,600;
+    src: url("../fonts/overpass/Overpass-Light.ttf"),url("../fonts/overpass/Overpass-SemiBold.ttf");
+}
+
+//====================================================================================
+
+
+
+header {
+    height: 500px;
+    background-image: url("../images/bg-pattern-intro-desktop.svg"), linear-gradient( 90deg,rgba(255,143,112,1) 8%, rgba(255,61,83,1) 68%);
+    background-position: right 74% top 52%;
+    background-repeat: no-repeat;
+    background-size: 220%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0 0 0 100px;
+    
+    .navbar{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 60px 0;
+
+        .menu{
+            display: flex;
+
+            .logo{
+                height: 35px;
+                margin: 0 45px 0 0;
+            }
+        }
+
+        .item-main{
+            margin: 0 13px;
+            color: hsl(0, 19%, 85%);
+            font-size: .85rem;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 600;
+            line-height: 35px;
+
+            img{
+                width: 8px;
+                margin: 0 4px;
+            }
+        }
+
+    }
+
+    .menu ul{
+        display: flex;
+    }
+
+    .content-header{
+        height: 100%;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

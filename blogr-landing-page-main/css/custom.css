@@ -1,0 +1,113 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: 0;
+  background: none;
+}
+
+@font-face {
+  font-family: "ubuntu";
+  font-weight: 400,500,700;
+  src: url("../fonts/ubuntu/Ubuntu-Regular.ttf"), url("../fonts/ubuntu/Ubuntu-Medium.ttf"), url("../fonts/ubuntu/Ubuntu-Bold.ttf");
+}
+
+@font-face {
+  font-family: "overpass";
+  font-weight: 300,600;
+  src: url("../fonts/overpass/Overpass-Light.ttf"), url("../fonts/overpass/Overpass-SemiBold.ttf");
+}
+
+header {
+  height: 500px;
+  background-image: url("../images/bg-pattern-intro-desktop.svg"), -webkit-gradient(linear, left top, right top, color-stop(8%, #ff8f70), color-stop(68%, #ff3d53));
+  background-image: url("../images/bg-pattern-intro-desktop.svg"), linear-gradient(90deg, #ff8f70 8%, #ff3d53 68%);
+  background-position: right 74% top 52%;
+  background-repeat: no-repeat;
+  background-size: 220%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 0 0 0 100px;
+}
+
+header .navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 60px 0;
+}
+
+header .navbar .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .navbar .menu .logo {
+  height: 35px;
+  margin: 0 45px 0 0;
+}
+
+header .navbar .item-main {
+  margin: 0 13px;
+  color: #e0d1d1;
+  font-size: .85rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+  line-height: 35px;
+}
+
+header .navbar .item-main img {
+  width: 8px;
+  margin: 0 4px;
+}
+
+header .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .content-header {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=custom.css.map */
