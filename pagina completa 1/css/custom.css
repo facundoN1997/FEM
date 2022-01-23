@@ -1,0 +1,372 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 400,500,700;
+  src: url("../fonts/ubuntu/Ubuntu-Regular.ttf"), url("../fonts/ubuntu/Ubuntu-Medium.ttf"), url("../fonts/ubuntu/Ubuntu-Bold.ttf");
+}
+
+@font-face {
+  font-family: "overpass";
+  font-weight: 300,600;
+  src: url("../fonts/overpass/Overpass-Light.ttf"), url("../fonts/overpass/Overpass-SemiBold.ttf");
+}
+
+header .navbar .menu .login .btn-white, header .content-header .buttons-hero .btn-start-free, header .content-header .buttons-hero .btn-learn-more, header .navbar .menu .sign-up-navbar, header .navbar .menu .item-main, header .navbar .menu .login .btn-login, header .content-header .header-title-2 {
+  color: #e0d1d1;
+  font-size: .90rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+  line-height: 35px;
+  margin: 0 13px;
+}
+
+header .navbar .menu .login .btn-white, header .content-header .buttons-hero .btn-start-free, header .content-header .buttons-hero .btn-learn-more {
+  color: #ff3d54;
+  margin: 0;
+  background-color: #FFF;
+  padding: 5px 38px;
+  border-radius: 25px;
+}
+
+header .navbar .menu .sign-up-navbar {
+  color: #FFF;
+  background-color: #ff7a85;
+  padding: 5px 38px;
+  border-radius: 25px;
+}
+
+header .content-header .header-title-1 {
+  font-family: "overpass", sans-serif;
+  font-weight: 600;
+  font-size: 3.5rem;
+  color: #FFF;
+}
+
+.rotated {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+header {
+  height: 550px;
+  background-image: url("../images/bg-pattern-intro-desktop.svg"), -webkit-gradient(linear, left top, right top, color-stop(8%, #ff8f70), color-stop(68%, #ff3d53));
+  background-image: url("../images/bg-pattern-intro-desktop.svg"), linear-gradient(90deg, #ff8f70 8%, #ff3d53 68%);
+  background-position: right 74% top 52%;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 220%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 0 0 0 100px;
+}
+
+header .navbar {
+  width: 100%;
+  padding: 60px 0;
+}
+
+header .navbar .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .navbar .menu .menu-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .navbar .menu .menu-brand ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+header .navbar .menu .menu-brand ul .option-hidden {
+  color: black;
+  font-family: Ubuntu;
+  font-weight: 500;
+  top: 48px;
+  position: absolute;
+  display: none;
+  overflow: hidden;
+  -webkit-transition: max-height .5s ease-in;
+  transition: max-height .5s ease-in;
+}
+
+header .navbar .menu .menu-brand ul .option-hidden .content {
+  background-color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  border-radius: 6px;
+  padding: 27px 37px  27px 25px;
+}
+
+header .navbar .menu .menu-brand ul .option-hidden a {
+  font-family: "ubuntu", sans-serif;
+  padding: 7px 0;
+}
+
+header .navbar .menu .menu-brand ul .option-hidden a:hover {
+  font-weight: 600;
+}
+
+header .navbar .menu .menu-brand .logo {
+  height: 35px;
+  margin: 0 45px 0 0;
+}
+
+header .navbar .menu .item-main {
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+header .navbar .menu .item-main img.arrow-light {
+  width: 12px;
+  -webkit-transition: -webkit-transform .7s;
+  transition: -webkit-transform .7s;
+  transition: transform .7s;
+  transition: transform .7s, -webkit-transform .7s;
+}
+
+header .navbar .menu .item-main img.arrow-dark {
+  display: none;
+  -webkit-transition: -webkit-transform .7s;
+  transition: -webkit-transform .7s;
+  transition: transform .7s;
+  transition: transform .7s, -webkit-transform .7s;
+}
+
+header .navbar .menu .item-main:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+header .navbar .menu .sign-up-navbar {
+  width: 135px;
+  text-align: center;
+}
+
+header .navbar .menu .item-main-hidden {
+  display: none;
+}
+
+header .navbar .menu .login .btn-login {
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+header .navbar .menu .login .btn-login:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+header .navbar .menu .login .btn-white {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+header .navbar .menu .login .btn-white:hover {
+  background-color: #ff7a85;
+  color: #FFF;
+}
+
+header .navbar .toggle {
+  display: none;
+}
+
+header .content-header {
+  padding: 0 30px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .content-header .header-title-1 {
+  text-align: center;
+}
+
+header .content-header .header-title-2 {
+  text-align: center;
+  margin: 8px 0 35px 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+header .content-header .buttons-hero {
+  text-align: center;
+}
+
+header .content-header .buttons-hero .btn-start-free {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  padding: 3px 15px;
+  margin-right: 10px;
+}
+
+header .content-header .buttons-hero .btn-start-free:hover {
+  background-color: #ff7a85;
+  color: #FFF;
+}
+
+header .content-header .buttons-hero .btn-learn-more {
+  padding: 3px 15px;
+  color: #FFF;
+  background: none;
+  border: solid 1px #FFF;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+header .content-header .buttons-hero .btn-learn-more:hover {
+  background-color: #FFF;
+  color: #ff525d;
+}
+
+@media screen and (max-width: 700px) {
+  .divisor {
+    display: block !important;
+  }
+  .login {
+    display: none;
+  }
+  header .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 70px 26px;
+  }
+  header .navbar .toggle {
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
+  header .navbar .menu .item-main {
+    color: black;
+    font-size: 1.06rem;
+    font-weight: 600;
+  }
+  header .navbar .menu .item-main img.arrow-dark {
+    display: inline;
+    width: 11px;
+    height: 8px;
+  }
+  header .navbar .menu .item-main img.arrow-light {
+    display: none;
+  }
+  header .navbar .menu .item-main:hover {
+    font-weight: 700;
+    color: black;
+  }
+  header .navbar .menu .item-main-hidden {
+    display: block !important;
+  }
+  header .navbar .menu .menu-brand ul {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    right: 0;
+    margin: 15px auto;
+    width: 90%;
+    background-color: #FFF;
+    border-radius: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    padding: 30px 0;
+  }
+  header .navbar .menu .menu-brand ul li {
+    padding: 12px 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: none;
+  }
+  header .navbar .menu .menu-brand ul .option-hidden {
+    position: static;
+    width: 100%;
+  }
+  header .navbar .menu .menu-brand ul .option-hidden .content {
+    background: #e6e5e5;
+    margin: 19px 26px;
+  }
+  header .navbar .menu .menu-brand ul .option-hidden a {
+    text-align: center;
+    padding: 11px 0;
+    color: #757575;
+  }
+}
+/*# sourceMappingURL=custom.css.map */

@@ -1,0 +1,306 @@
+
+header {
+    height: 550px;
+    background-image: url("../images/bg-pattern-intro-desktop.svg"), linear-gradient( 90deg,rgba(255,143,112,1) 8%, rgba(255,61,83,1) 68%);
+    background-position: right 74% top 52%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 220%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0 0 0 100px;
+    
+    .navbar{
+        width: 100%;
+        padding: 60px 0;
+
+        .menu{
+            display: flex;
+            justify-content: space-around;
+
+            .menu-brand{
+                display: flex;
+
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    position: relative;
+                    
+                    .option-hidden{
+                        color: black;
+                        font-family: Ubuntu;
+                        font-weight: 500;
+                        top: 48px;
+                        position: absolute;
+                        display: none;
+                        overflow: hidden;
+                        transition: max-height .5s ease-in;
+    
+                        .content{
+                            
+                            background-color: #FFF;
+                            display: flex;
+                            flex-direction: column;
+                            align-content: flex-start;
+                            border-radius: 6px;
+                            padding: 27px 37px  27px 25px;
+                        }
+    
+                        a{
+                            font-family: "ubuntu", sans-serif;
+                            padding: 7px 0;
+                            
+                        }
+    
+                        a:hover{
+                            font-weight: 600;
+                        }
+                    }
+    
+
+                }
+    
+                .logo{
+                    height: 35px;
+                    margin: 0 45px 0 0;
+                }
+    
+            }
+
+            .item-main{
+                @extend %letter-style-1;
+                transition: color .5s;
+    
+    
+                img.arrow-light{
+                    width: 12px;
+                    transition: transform .7s;
+                    
+                }
+
+                img.arrow-dark{
+                    display: none;
+                    transition: transform .7s;
+                }
+            }
+
+            .item-main:hover{
+                color: #FFF;
+                text-decoration: underline;
+            }
+
+            .sign-up-navbar{
+                @extend %btn-bg-red;
+                width: 135px;
+                text-align: center;
+            }
+
+            .item-main-hidden{
+                display: none;
+            }
+            
+            .login{
+                .btn-login{
+                    @extend %letter-style-1;
+                    transition: color .5s;
+                    
+                }
+
+                .btn-login:hover{
+                    color: #FFF;
+                    text-decoration: underline;
+                }
+    
+                .btn-white{
+                    @extend %btn-bg-white;
+                    transition: all .5s;
+                }
+
+                .btn-white:hover{
+                    background-color: hsl(355, 100%, 74%);
+                    color: #FFF;
+                }
+            }
+
+
+        }
+
+        .toggle{
+            display: none;
+        }
+
+    }
+
+
+    .content-header{
+        padding: 0 30px;
+        height: 100%;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .header-title-1{
+            @extend %letter-style-2;
+            text-align: center;
+        }
+
+        .header-title-2{
+            @extend %letter-style-1;
+            text-align: center;
+            margin: 8px 0 35px 0;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+
+
+        .buttons-hero{
+            text-align: center;
+
+            .btn-start-free{
+                @extend %btn-bg-white;
+                transition: all .5s;
+                padding: 3px 15px;
+                margin-right: 10px;
+            }
+
+            .btn-start-free:hover{
+                background-color: hsl(355, 100%, 74%);
+                color: #FFF;
+            }
+
+            .btn-learn-more{
+                @extend %btn-bg-white;
+                padding: 3px 15px;
+                color: #FFF;
+                background: none;
+                border: solid 1px #FFF;
+                transition: all .5s;
+            }
+
+            .btn-learn-more:hover{
+                background-color: #FFF;
+                color: hsl(356, 100%, 66%);
+            }
+
+        }
+
+
+        
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    
+    .divisor{
+        display: block !important;
+    }
+
+    .login{
+        display: none;
+    }
+
+    header{
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            padding: 70px 26px;
+    
+            .toggle{
+                display: block;
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+
+        .navbar .menu {
+
+
+           .item-main{
+                color: black;
+                font-size: 1.06rem;
+                font-weight: 600;
+
+
+                img.arrow-dark{
+                    display: inline;
+                    width: 11px;
+                    height: 8px;
+                }
+
+                img.arrow-light{
+                    display: none;
+                }
+            }
+
+            .item-main:hover{
+                font-weight: 700;
+                color: black;
+            }
+            .item-main-hidden{
+                display: block !important;
+            }
+
+            
+
+
+            .menu-brand ul{
+                position: absolute;
+                top: 130px;
+                left: 0;
+                right: 0;
+                margin: 15px auto;
+                width: 90%;
+                background-color: #FFF;
+                border-radius: 5px;
+                flex-direction: column;
+                align-items: center;
+                overflow: hidden;
+                padding: 30px 0;
+
+                li{
+                    padding: 12px 0;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background: none;
+                }
+
+                .option-hidden{
+                    position: static;
+                    width: 100%;
+                    
+                    .content{
+                        background: rgb(230, 229, 229);
+                        margin: 19px 26px;
+                    }
+
+                    a{
+                        text-align: center;
+                        padding: 11px 0;
+                        color: rgb(117, 117, 117);
+                    }
+                }
+
+            }
+
+
+        }
+    
+     
+
+
+
+
+    }
+
+
+
+}

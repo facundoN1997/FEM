@@ -1,0 +1,88 @@
+//GENERIC STYLES======================================================================
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    font-weight: 400,500,700;
+    src: url("../fonts/ubuntu/Ubuntu-Regular.ttf"),url("../fonts/ubuntu/Ubuntu-Medium.ttf"),url("../fonts/ubuntu/Ubuntu-Bold.ttf");
+}
+
+@font-face {
+    font-family: "overpass";
+    font-weight: 300,600;
+    src: url("../fonts/overpass/Overpass-Light.ttf"),url("../fonts/overpass/Overpass-SemiBold.ttf");
+}
+
+//====================================================================================
+
+
+
+//COMMON STYLES====================================================================
+
+%letter-style-1{
+    color: hsl(0, 19%, 85%);
+    font-size: .90rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    line-height: 35px;
+    margin: 0 13px;
+}
+
+
+%btn-bg-white{
+    color: hsl(353, 100%, 62%);
+    @extend %letter-style-1;
+    margin: 0;
+    background-color: #FFF;
+    padding: 5px 38px;
+    border-radius: 25px;
+}
+
+%btn-bg-red{
+    color: #FFF;
+    @extend %letter-style-1;
+    background-color: hsl(355, 100%, 74%);
+    padding: 5px 38px;
+    border-radius: 25px;
+}
+
+%letter-style-2{
+    font-family: "overpass", sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: #FFF;
+}
+
+
+.rotated{
+    transform: rotate(180deg);
+}
+
+//====================================================================================
+
+
+//-----------------header's Styles----------------//
+@import "_header.scss";
+
+
+
+//---------------section 1 styles------------------//
