@@ -1,0 +1,125 @@
+
+.section-2{
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;
+    
+    background-image: url("../images/bg-pattern-circles.svg"), linear-gradient(60deg, rgba(44,45,54,1) 20%, rgba(63,64,82,1) 54%);
+    background-repeat: no-repeat;
+    background-position: -40% 85%, center;
+    background-size: 70%, 100%;
+    height: 330px;
+    padding: 0 90px;
+    margin-bottom: 100px;
+    border-radius: 0 120px 0 120px;
+
+    .image{
+        min-height: 200px;
+        flex: 1 0 50%;
+        position: relative;
+        //padding: 120px 0; 
+        img{
+            position: absolute;
+            top: 30px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            width: 490px;
+        }
+    }
+
+    .content-text{
+        flex: 1 0 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 50px;
+
+        .content-title{
+            @extend %letter-style-4-title;
+            color: #FFF;
+            margin: 24px 0;
+            font-size: 2rem
+        }
+
+        .content-paragraph{
+            @extend %letter-style-5-parraph;
+            color: #FFF;
+
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1033px) {
+    
+    .section-2{
+        height: auto;
+        padding: 50px 15px 90px 15px;
+        margin-bottom: 120px;
+        text-align: center;
+
+
+
+        .image{
+            padding: 50px 0;
+            img{
+                width: 60%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    
+    .section-2{
+        height: auto;
+        padding: 0 15px 40px 15px;
+        margin-bottom: 40px;
+        text-align: center;
+        background-size: 150%;
+        background-position: center 90%, 100%;
+
+        .image{
+            flex: 1 1 auto;
+            width: 100%;
+            padding: 50px 0;
+            img{
+                width: 40%;
+                top: 0;
+            }
+        }
+
+        .content-text{
+            flex: 1 1 auto;
+            width: 100%;
+        }
+    }
+
+    
+}
+
+@media screen and (max-width: 400px) {
+    
+    .section-2{
+        background-size: 160%;
+        background-position: 50% 370%, 100%;
+
+        
+
+        .image{
+            padding: 70px 0;
+            img{
+                transform: scale(1.1);
+                width: 100%;
+                top: -80%;
+            }
+        }
+
+    }
+
+    
+}

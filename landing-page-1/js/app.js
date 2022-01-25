@@ -5,6 +5,7 @@ $(".toggle").on("click",()=>{
 })
 //===========================================
 
+
 //FUNCTIONALITY OF MENU'S ITEM====================
 
 function rotateImg(element=false){
@@ -25,7 +26,7 @@ function rotateImg(element=false){
 }
 
 $(".item-sub-menu").click(function () {
-    
+
     let element = $(this).next()
     element.slideToggle(300)
     rotateImg($(this));

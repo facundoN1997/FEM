@@ -12,6 +12,7 @@ ul{
 a{
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 button{
@@ -40,7 +41,7 @@ button{
 
 %letter-style-1{
     color: hsl(0, 19%, 85%);
-    font-size: .90rem;
+    font-size: .76rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 600;
     line-height: 35px;
@@ -77,6 +78,29 @@ button{
     transform: rotate(180deg);
 }
 
+
+
+%letter-style-3-title{
+    font-family: "overpass";
+    color: hsl(208, 49%, 24%);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+%letter-style-4-title{
+    font-family: "overpass";
+    color: hsl(208, 49%, 24%);
+    font-size: 1.4rem;
+}
+
+%letter-style-5-parraph{
+    
+    font-family: "overpass";
+    color: hsl(207, 13%, 34%);
+    font-size: .9rem;
+    line-height: 25px;
+}
+
 //====================================================================================
 
 
@@ -86,3 +110,18 @@ button{
 
 
 //---------------section 1 styles------------------//
+@import "_section1.scss";
+
+
+//---------------section 2 styles------------------//
+@import "_section2.scss";
+
+
+//---------------section 3 styles------------------//
+@import "_section3.scss";
+
+
+//---------------footer styles------------------//
+@import "_footer.scss";
+
+
