@@ -738,6 +738,13 @@ footer .menu .col a {
   color: #c8c8cb;
   font-family: "ubuntu", sans-serif;
   font-size: .75rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+footer .menu .col a:hover {
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 800px) {
@@ -773,10 +780,6 @@ footer .menu .col a {
     width: 100%;
     text-align: center;
     margin: 20px 0;
-  }
-  footer .menu .col a:hover {
-    font-weight: 700;
-    text-decoration: underline;
   }
 }
 /*# sourceMappingURL=custom.css.map */
