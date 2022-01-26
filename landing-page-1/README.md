@@ -4,7 +4,7 @@ se realizó challenge de frontend mentor siguiendo diseño de guia provisto por 
 
 ![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)
 
-[LINK SITIO](https://https://facundoangel.github.io/FEM/landing-page-1/)
+[LINK SITIO](https://facundoangel.github.io/FEM/landing-page-1/)
 
 
 ## TECNOLOGÍAS
