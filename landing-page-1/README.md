@@ -26,16 +26,20 @@ se realizó challenge de frontend mentor siguiendo diseño de guia provisto por 
 
 
 **Vista Escritorio**
+
 ![Design preview for the Blogr landing page coding challenge](./design/desktop-design.jpg)
 
 
 **Vista Mobil**
+
 ![Design preview for the Blogr landing page coding challenge](./design/mobile-design.jpg)
 
 
 **Vista Menu de Mobil**
+
 ![Design preview for the Blogr landing page coding challenge](./design/mobile-menu.jpg)
 
 
 **Vista con interacción de usuario**
+
 ![Design preview for the Blogr landing page coding challenge](./design/active-states.jpg)
