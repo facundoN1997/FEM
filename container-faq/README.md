@@ -1,13 +1,43 @@
-# Frontend Mentor - FAQ accordion card
+# Frontend Mentor - Blogr landing page
 
-![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg)
+se realizó challenge de frontend mentor siguiendo diseño de guia provisto por la pagina
 
-## EJERCICIO Nº2
-Se realizo un diseño siguiendo el modelo presentado usando las siguientes tecnologías:
+![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)
 
--HTML
--CSS
--JAVASCRIPT
--BOOTSTRAP
--JQUERY
+[LINK SITIO](https://facundoangel.github.io/FEM/container-faq/)
 
+
+## TECNOLOGÍAS
+
+-html 
+
+-css
+
+-sass
+
+-javascript 
+
+-jquery
+
+-bootstrap
+
+
+## DISEÑO DEL CHALLENGE
+
+
+
+
+**Vista Escritorio**
+
+![Design preview for the Blogr landing page coding challenge](./design/desktop-design.jpg)
+
+
+**Vista Mobil**
+
+![Design preview for the Blogr landing page coding challenge](./design/mobile-design.jpg)
+
+
+
+**Vista con interacción de usuario**
+
+![Design preview for the Blogr landing page coding challenge](./design/active-states.jpg)
