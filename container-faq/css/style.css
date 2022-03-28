@@ -142,6 +142,7 @@
     background-image: url("../images/bg-pattern-mobile.svg") !important;
     background-size: 260px 100px !important;
     background-position: 52% -4% !important;
+    margin-top: 40px;
   }
   .card #img-box {
     display: none;

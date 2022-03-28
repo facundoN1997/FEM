@@ -136,5 +136,14 @@
 @media(max-width:500px){
     .card-main{
         width: 70%;
+
+
+
+        .bottom-card > *{
+            margin: 0 !important;
+            padding: 0 5px !important;
+        }
     }
+
+
 }

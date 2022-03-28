@@ -347,6 +347,7 @@ header .content-header .buttons-hero .btn-learn-more:hover {
     display: block !important;
   }
   header .navbar .menu .menu-brand ul {
+    display: none;
     position: absolute;
     top: 130px;
     left: 0;

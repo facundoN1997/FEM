@@ -132,5 +132,9 @@
   .card-main {
     width: 70%;
   }
+  .card-main .bottom-card > * {
+    margin: 0 !important;
+    padding: 0 5px !important;
+  }
 }
 /*# sourceMappingURL=custom.css.map */
