@@ -53,7 +53,9 @@ const WriteOperation = (digit) =>{
     let digitsInScreen = $(".digits").text();
     re = /[-*+/]/g;
 
-    if(digitsInScreen!=="0" && !digitsInScreen.match(re) && digitsInScreen[digitsInScreen.length-1] !== "."){
+    
+
+    if(digitsInScreen!=="0" && !digitsInScreen.match(re) && digitsInScreen[digitsInScreen.length-1] !== ","){
         
         $(".digits").text(digitsInScreen + ' ' + digit + " ");
 
@@ -90,4 +92,34 @@ $("#key-del").on("click",function(){
 
 $(".key-operation").on("click",function(){
     WriteOperation($(this).text());
+})
+
+$("#key-equal").on("click",function(){
+    let display = $(".digits");
+    let textDisplay = display.text();
+    let stringResult = "";
+    
+    for(let char of textDisplay){
+        //console.log(char)
+        switch(char){
+            case ",":
+                stringResult+=".";
+                break;
+
+            case "x":
+                stringResult+="*";
+                break;
+
+            default:
+                stringResult+=char;
+                break;
+        }
+    }
+    //console.log(stringResult)
+
+    if(stringResult.match(/\/ 0$/g)){ 
+        alert("Error: No se puede dividir por cero");
+        return;
+    }    
+    display.text(eval(stringResult));
 })
