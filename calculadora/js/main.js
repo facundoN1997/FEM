@@ -16,7 +16,7 @@ const writeNumber = (digits) =>{
     }
     else{
         
-        if(digitsInScreen.length < 70){
+        if(digitsInScreen.length < 20){
             $(".digits").text(digitsInScreen + digits)
         }
 
@@ -24,7 +24,7 @@ const writeNumber = (digits) =>{
     
 }
 
-const WriteDot = (digit) =>{
+const writeDot = (digit) =>{
     let digitsInScreen = $(".digits").text();
 
  
@@ -49,7 +49,7 @@ const WriteDot = (digit) =>{
     
 }
 
-const WriteOperation = (digit) =>{
+const writeOperation = (digit) =>{
     let digitsInScreen = $(".digits").text();
     re = /[-*+/]/g;
 
@@ -72,29 +72,8 @@ const delOperation = ()=>{
     else $(".digits").text("0");
 }
 
+const resolveOperation = () =>{
 
-//HANDLE CLICKS==============================================================
-$(".key-number").on("click",function(){
-    writeNumber($(this).text());
-})
-
-$("#key-dot").on("click",function(){
-    WriteDot(",");
-})
-
-$("#key-reset").on("click",function(){
-    $(".digits").text("0");
-})
-
-$("#key-del").on("click",function(){
-    delOperation();
-})
-
-$(".key-operation").on("click",function(){
-    WriteOperation($(this).text());
-})
-
-$("#key-equal").on("click",function(){
     let display = $(".digits");
     let textDisplay = display.text();
     let stringResult = "";
@@ -122,4 +101,43 @@ $("#key-equal").on("click",function(){
         return;
     }    
     display.text(eval(stringResult));
+    
+}
+
+const fixScrollDisplay = ()=>{
+    let textDisplay = $(".digits");
+    textDisplay[0].scrollLeft = textDisplay.width();
+    
+}
+
+//HANDLE CLICKS==============================================================
+$(".key-number").on("click",function(){
+    writeNumber($(this).text());
+    fixScrollDisplay();
+    
 })
+
+$("#key-dot").on("click",function(){
+    writeDot(",");
+    fixScrollDisplay();
+})
+
+$("#key-reset").on("click",function(){
+    $(".digits").text("0");
+})
+
+$("#key-del").on("click",function(){
+    delOperation();
+})
+
+$(".key-operation").on("click",function(){
+    writeOperation($(this).text());
+    fixScrollDisplay();
+})
+
+$("#key-equal").on("click",function(){
+    resolveOperation();
+    fixScrollDisplay();
+})
+
+

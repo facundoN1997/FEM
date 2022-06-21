@@ -154,21 +154,33 @@ button {
   -webkit-box-pack: end !important;
       -ms-flex-pack: end !important;
           justify-content: flex-end !important;
+  position: relative;
 }
 
 .content-main .screen .digits {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   font-family: "spartan", sans-serif;
   white-space: nowrap;
-  text-align: left;
+  text-align: right;
   font-size: 2.4rem;
   color: #FFF;
-  overflow: auto;
+  overflow-x: auto;
+}
+
+.content-main .screen .digits::-webkit-scrollbar {
+  height: 7px;
+}
+
+.content-main .screen .digits::-webkit-scrollbar-thumb {
+  background: #d03f2f;
+  border-radius: 30px;
+}
+
+.content-main .screen .digits::-webkit-scrollbar-track {
+  background: none !important;
 }
 
 .content-main .keyboard {
