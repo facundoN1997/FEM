@@ -26,7 +26,7 @@ Vista Escritorio
 ![Preview desktop theme 2](./design/desktop-design-theme-2.jpg)
 ![Preview desktop theme 3](./design/desktop-design-theme-3.jpg)
 
-Vista Escritorio
+Vista Movil
 
 ![Preview mobile theme 1](./design/mobile-design-theme-1.jpg)
 ![Preview mobile theme 2](./design/mobile-design-theme-2.jpg)
