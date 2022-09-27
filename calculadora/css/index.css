@@ -137,11 +137,6 @@ button {
   border-radius: 50%;
 }
 
-.content-main .head .theme-selector .select .toggle:hover {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
 
 .content-main .screen {
   min-height: 100px;
